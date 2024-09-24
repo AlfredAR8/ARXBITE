@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.arxbite.com/sitemap.xml
+
+User-agent: Googlebot-Image 
+Disallow: /assets/images/about/*.
+Disallow: /assets/images/brands/*.
+Disallow: /assets/images/footer/*.
+Disallow: /assets/images/header/*.
+Disallow: /assets/images/services/*.
