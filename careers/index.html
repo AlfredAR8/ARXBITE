@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>ARXBITE Careers</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <style>
         body {
             background-color: black;
@@ -12,34 +11,37 @@
             color: white;
             text-align: center;
             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         h1 {
             font-size: 4em;
             font-family: Arial, sans-serif;
             margin: 0;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            filter: url(#wavy);
+            color: transparent;
+            background: url('https://i.ibb.co/xKkfjfn/Screenshot-2024-11-19-at-6-33-19-PM.png') repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: moveWater 10s linear infinite;
+        }
+        @keyframes moveWater {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 1000px 0;
+            }
         }
         p {
             font-size: smaller;
             font-family: Arial, sans-serif;
             color: #ccc;
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <svg width="0" height="0">
-        <filter id="wavy">
-            <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="2" />
-            <feDisplacementMap in="SourceGraphic" scale="30" />
-            <animate xlink:href="#wavy feTurbulence" attributeName="baseFrequency" dur="10s" values="0.02;0.05;0.02" repeatCount="indefinite" />
-        </filter>
-    </svg>
     <h1>Come check back soon!</h1>
     <p>ARXBITE careers</p>
 </body>
