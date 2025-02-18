@@ -103,7 +103,13 @@
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
                   <div class="logo-circle">
-                    <img src="assets/images/logo/logo.png" alt="Logo" style="width: 80px; height: 80px"/>
+                    <!-- Use img-fluid so the logo scales on mobile -->
+                    <img 
+                      src="assets/images/logo/logo.png" 
+                      alt="Logo"
+                      class="img-fluid"
+                      style="max-width: 80px; height: auto;" 
+                    />
                   </div>
                 </a>                
                 <button
@@ -115,9 +121,9 @@
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span class="toggler-icon"> </span>
-                  <span class="toggler-icon"> </span>
-                  <span class="toggler-icon"> </span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
                 </button>
 
                 <div
@@ -134,8 +140,6 @@
                   </ul>
                 </div>
                 <!-- navbar collapse -->
-
-
               </nav>
               <!-- navbar -->
             </div>
@@ -167,7 +171,7 @@
                   data-wow-duration="1.3s"
                   data-wow-delay="0.8s"
                 >
-                Innovative apps, software, and tech solutions for a smarter future.
+                  Innovative apps, software, and tech solutions for a smarter future.
                 </p>
               </div>
               <!-- header hero content -->
@@ -181,7 +185,13 @@
                 data-wow-duration="1.3s"
                 data-wow-delay="1.4s"
               >
-                <img src="assets/images/header/header-hero.png" alt="hero" style="width: 740px; height: 520px;" />
+                <!-- Use img-fluid and remove fixed width/height -->
+                <img 
+                  src="assets/images/header/header-hero.png" 
+                  alt="hero" 
+                  class="img-fluid"
+                  style="max-width: 100%; height: auto;" 
+                />
               </div>
               <!-- header hero image -->
             </div>
@@ -213,7 +223,7 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.2s"
               >
-                <img src="assets/images/brands/uideck.svg" alt="brand" />
+                <img src="assets/images/brands/uideck.svg" alt="brand" class="img-fluid" />
               </div>
               <!-- single logo -->
               <div
@@ -221,7 +231,7 @@
                 data-wow-duration="1.5s"
                 data-wow-delay="0.3s"
               >
-                <img src="assets/images/brands/graygrids.svg" alt="brand" />
+                <img src="assets/images/brands/graygrids.svg" alt="brand" class="img-fluid" />
               </div>
               <!-- single logo -->
               <div
@@ -229,8 +239,8 @@
                 data-wow-duration="1.5s"
                 data-wow-delay="0.4s"
               >
-                <img src="assets/images/brands/lineicons.svg" alt="brand" />
-              </div> 
+                <img src="assets/images/brands/lineicons.svg" alt="brand" class="img-fluid" />
+              </div>
               <!-- single logo -->
             </div>
             <!-- brand logo -->
@@ -266,10 +276,12 @@
               data-wow-delay="0.2s"
             >
               <div class="services-icon">
+                <!-- You can remove or adjust the inline style for better responsiveness -->
                 <img
                   src="assets/images/services/services-shape-1.png"
                   alt="shape"
-                  style="border-bottom: 150px; height: 150px;"
+                  class="img-fluid"
+                  style="max-height: 150px;"
                 />
               </div>
               <div class="services-content mt-30">
@@ -280,7 +292,7 @@
                   Check when Google Meet meetings start and receive a Discord message when a meeting starts!
                 </p>
                 <a class="more" href="#app1"
-                  >Learn More <i class="lni lni-chevron-right"> </i>
+                  >Learn More <i class="lni lni-chevron-right"></i>
                 </a>
               </div>
             </div>
@@ -296,7 +308,8 @@
                 <img
                   src="assets/images/services/services-shape-2.png"
                   alt="shape"
-                  style="border-bottom: 150px; height: 150px;"
+                  class="img-fluid"
+                  style="max-height: 150px;"
                 />
               </div>
               <div class="services-content mt-30">
@@ -307,7 +320,7 @@
                   Let AI discover your next favorite song with Echo Insight’s personalized recommendations.
                 </p>
                 <a class="more" href="#app2"
-                  >Learn More <i class="lni lni-chevron-right"> </i>
+                  >Learn More <i class="lni lni-chevron-right"></i>
                 </a>
               </div>
             </div>
@@ -323,7 +336,8 @@
                 <img
                   src="assets/images/services/services-shape-3.png"
                   alt="shape"
-                  style="border-bottom: 150px; height: 150px;"
+                  class="img-fluid"
+                  style="max-height: 150px;"
                 />
               </div>
               <div class="services-content mt-30">
@@ -334,7 +348,7 @@
                   Transform your ceiling into a stunning skyscape with SkyDome!
                 </p>
                 <a class="more" href="#app3"
-                  >Learn More <i class="lni lni-chevron-right"> </i>
+                  >Learn More <i class="lni lni-chevron-right"></i>
                 </a>
               </div>
             </div>
@@ -378,7 +392,12 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
-                <img src="assets/images/about/about1.png" alt="about" />
+                <!-- Make this responsive -->
+                <img 
+                  src="assets/images/about/about1.png" 
+                  alt="about"
+                  class="img-fluid"
+                />
               </div>
               <!-- about image -->
             </div>
@@ -387,16 +406,17 @@
         </div>
         <!-- container -->
         <div class="about-shape-1">
-          <img src="assets/images/about/about-shape-1.svg" alt="shape" />
+          <img src="assets/images/about/about-shape-1.svg" alt="shape" class="img-fluid"/>
         </div>
       </div>
       <!--====== ABOUT PART ENDS ======-->
     </section>
-    <section id="app2"></section>
+
+    <section id="app2">
       <!--====== ABOUT PART START ======-->
       <div class="about-area pt-70">
         <div class="about-shape-2">
-          <img src="assets/images/about/about-shape-2.svg" alt="shape" />
+          <img src="assets/images/about/about-shape-2.svg" alt="shape" class="img-fluid"/>
         </div>
         <div class="container">
           <div class="row align-items-center">
@@ -426,7 +446,13 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
-                <img src="assets/images/about/about2.png" alt="about" style="width: 450px; height: 600px;"/>
+                <!-- Make this responsive -->
+                <img 
+                  src="assets/images/about/about2.png" 
+                  alt="about" 
+                  class="img-fluid"
+                  style="max-width: 100%; height: auto;"
+                />
               </div>
               <!-- about image -->
             </div>
@@ -437,7 +463,8 @@
       </div>
       <!--====== ABOUT PART ENDS ======-->
     </section>
-    <section id="app3"></section>
+
+    <section id="app3">
       <!--====== ABOUT PART START ======-->
       <div class="about-area pt-70">
         <div class="container">
@@ -468,7 +495,12 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
-                <img src="assets/images/about/about3.png" alt="about"/>
+                <!-- Make this responsive -->
+                <img
+                  src="assets/images/about/about3.png"
+                  alt="about"
+                  class="img-fluid"
+                />
               </div>
               <!-- about image -->
             </div>
@@ -477,7 +509,7 @@
         </div>
         <!-- container -->
         <div class="about-shape-1">
-          <img src="assets/images/about/about-shape-1.svg" alt="shape" />
+          <img src="assets/images/about/about-shape-1.svg" alt="shape" class="img-fluid"/>
         </div>
       </div>
       <!--====== ABOUT PART ENDS ======-->
@@ -487,16 +519,16 @@
     <footer id="footer" class="footer-area pt-120">
       <div class="container">
         <div
-        class="separator-area wow fadeIn"
-        data-wow-duration="1s"
-        data-wow-delay="0.5s"
-      >
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="separator mt-200" style="border-bottom: 2px; height: 50px;"></div>
+          class="separator-area wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
+        >
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="separator mt-200" style="border-bottom: 2px; height: 50px;"></div>
+            </div>
           </div>
-        </div>
-      </div>      
+        </div>      
         <!-- subscribe area -->
         <div class="footer-widget pb-100">
           <div class="row">
@@ -508,7 +540,13 @@
               >
                 <a class="logo" href="javascript:void(0)">
                   <div class="logo-circle2">
-                    <img src="assets/images/logo/logo.png" alt="Logo" style="width: 100px; height: 100px"/>
+                    <!-- Make this responsive -->
+                    <img 
+                      src="assets/images/logo/logo.png" 
+                      alt="Logo" 
+                      class="img-fluid"
+                      style="max-width: 100px; height: auto;" 
+                    />
                   </div>
                 </a>
                 <p class="text">
@@ -517,12 +555,12 @@
                 <ul class="social">
                   <li>
                     <a href="https://x.com/arxbite">
-                      <i class="lni lni-twitter-filled"> </i>
+                      <i class="lni lni-twitter-filled"></i>
                     </a>
                   </li>
                   <li>
                     <a href="https://www.instagram.com/arxbite/">
-                      <i class="lni lni-instagram-filled"> </i>
+                      <i class="lni lni-instagram-filled"></i>
                     </a>
                   </li>
                 </ul>
@@ -538,6 +576,7 @@
                   data-wow-delay="0.6s"
                 >
                   <ul>
+                    <!-- Add links or keep empty -->
                   </ul>
                 </div>
                 <!-- footer wrapper -->
@@ -564,13 +603,6 @@
           <!-- row -->
         </div>
         <!-- footer widget -->
-              </div>
-              <!-- copyright -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- footer copyright -->
       </div>
       <!-- container -->
       <div id="particles-2"></div>
@@ -578,7 +610,9 @@
     <!--====== FOOTER PART ENDS ======-->
 
     <!--====== BACK TOP TOP PART START ======-->
-    <a href="#" class="back-to-top"> <i class="lni lni-chevron-up"> </i> </a>
+    <a href="#" class="back-to-top"> 
+      <i class="lni lni-chevron-up"></i> 
+    </a>
     <!--====== BACK TOP TOP PART ENDS ======-->
 
     <!--====== Javascript Files ======-->
