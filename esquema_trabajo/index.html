@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquema de trabajo ARXBITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+        ul {
+            list-style-position: outside;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .prose-ul ul {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-7xl p-4 sm:p-6 md:p-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">Esquema de trabajo ARXBITE</h1>
+            <p class="text-lg text-gray-600">El modelo ARXBITE está diseñado para combinar la claridad de una estructura jerárquica con la flexibilidad de las metodologías ágiles. A través de roles definidos y un flujo de trabajo semanal, se busca maximizar la eficiencia, respetar la autonomía de los colaboradores y garantizar la entrega de resultados de alta calidad.</p>
+        </header>
+
+        <!-- Image Placeholders -->
+        <section class="mb-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <!-- Horario laboral de la empresa (imagen) -->
+                <a
+                href="/assets/horario-laboral-empresa.png"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-gray-200 hover:bg-gray-300 rounded-lg p-4 flex items-center justify-center h-32 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                role="button" aria-label="Abrir imagen: Horario laboral de la empresa"
+                >
+                <span class="text-gray-700 font-semibold">Horario laboral de la empresa y Horarios sugeridos</span>
+                </a>
+
+                <!-- Calendario de Sprints (imagen) -->
+                <a
+                href="/assets/calendario-sprints.png"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-gray-200 hover:bg-gray-300 rounded-lg p-4 flex items-center justify-center h-32 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                role="button" aria-label="Abrir imagen: Calendario de Sprints"
+                >
+                <span class="text-gray-700 font-semibold">Calendario de Sprints</span>
+                </a>
+
+                <!-- Calendario Empresarial (PDF) -->
+                <a
+                href="/assets/calendario-empresarial.pdf"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-gray-200 hover:bg-gray-300 rounded-lg p-4 flex items-center justify-center h-32 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                role="button" aria-label="Abrir PDF: Calendario Empresarial"
+                >
+                <span class="text-gray-700 font-semibold">Calendario Empresarial (PDF)</span>
+                </a>
+            </div>
+        </section>
+
+
+        <div class="flex flex-col lg:flex-row gap-x-12">
+            <!-- Index Sidebar -->
+            <aside class="lg:w-1/3 mb-12 lg:mb-0">
+                <nav id="indice" class="bg-white p-6 rounded-lg shadow-md sticky top-4 z-10">
+                    <h2 class="text-2xl font-bold mb-4 text-center">ÍNDICE</h2>
+                    <ul class="space-y-2 text-blue-600">
+                        <li><a href="#roles" class="hover:underline">🎭 Estructura de Roles y Responsabilidades</a></li>
+                        <li><a href="#flujo-trabajo" class="hover:underline">🗓️ Flujo de Trabajo Semanal</a></li>
+                        <li><a href="#instrucciones-comunicacion" class="hover:underline">📋 Instrucciones Generales de Comunicación y Gestión de Tareas</a></li>
+                        <li><a href="#guia-resolucion" class="hover:underline">🧩 Guía para Resolución de Errores y Dudas Técnicas</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="lg:w-2/3">
+                <!-- Roles y Responsabilidades -->
+                <section id="roles" class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2">🎭 Estructura de Roles y Responsabilidades</h2>
+                    
+                    <div class="mb-8 p-6 bg-white rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">🧭 Dirección General (CEO)</h3>
+                        <p class="text-sm text-gray-500 mb-4 italic">(Sujeto a cambios)</p>
+                        
+                        <div class="space-y-4 prose-ul">
+                            <div>
+                                <h4 class="font-semibold">Función estratégica:</h4>
+                                <p>Define la visión, el rumbo y los objetivos generales de la empresa, asegurando su alineación con la misión, los valores y los principios de innovación, sostenibilidad y responsabilidad social de ARXBITE. Establece los objetivos específicos de cada proyecto, revisa los avances semanalmente y asegura que todas las áreas trabajen en coherencia con la estrategia global de la compañía.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Gestión operativa:</h4>
+                                <ul>
+                                    <li>Se reúne semanalmente con los Coordinadores de Área para revisar avances, establecer prioridades y resolver bloqueos.</li>
+                                    <li>Evalúa entregables finales y solicita correcciones o mejoras cuando sea necesario.</li>
+                                    <li>Supervisa la ejecución de los proyectos y la correcta aplicación de los procesos establecidos.</li>
+                                    <li>Autoriza la creación de nuevas áreas, posiciones o esquemas de trabajo según las necesidades de los proyectos.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Planeación y control:</h4>
+                                <ul>
+                                    <li>Crea y aprueba roadmaps generales y específicos por proyecto, definiendo hitos, tiempos y entregables.</li>
+                                    <li>Establece y revisa OKRs (Objectives & Key Results) para cada área o iniciativa.</li>
+                                    <li>Monitorea KPIs técnicos, financieros y de impacto, asegurando la eficiencia y el cumplimiento de metas.</li>
+                                    <li>Prioriza la asignación de recursos, inversión y financiamiento de acuerdo con el crecimiento y proyección de cada proyecto.</li>
+                                </ul>
+                            </div>
+                             <div>
+                                <h4 class="font-semibold">Finanzas y administración:</h4>
+                                <ul>
+                                    <li>Gestiona los recursos financieros y materiales de la empresa.</li>
+                                    <li>Supervisa el cumplimiento fiscal, contable y administrativo.</li>
+                                    <li>Se encarga de los pagos de servicios, servidores y plataformas de trabajo (Asana, correos, GitHub, dominios, sitio web, entre otros).</li>
+                                    <li>Los Coordinadores deberán notificarle oportunamente cualquier vencimiento o requerimiento de pago para su autorización y ejecución.</li>
+                                    <li>Elabora reportes y estadísticas anuales de ingresos, egresos y resultados financieros.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Talento y organización:</h4>
+                                <ul>
+                                    <li>Dirige los procesos de contratación, promoción y reubicación del personal o practicantes.</li>
+                                    <li>Firma contratos, convenios, cartas de prácticas, voluntariados y NDAs.</li>
+                                    <li>Define los esquemas de trabajo (remoto, híbrido o presencial) de acuerdo con la naturaleza del área o proyecto.</li>
+                                    <li>Fomenta el desarrollo humano y profesional de los colaboradores a través de mentoría, retroalimentación y capacitación.</li>
+                                    <li>Registra estadísticas anuales de talento, desempeño y productividad general.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Innovación y propiedad intelectual:</h4>
+                                <ul>
+                                    <li>Impulsa la creación de nuevos proyectos, productos y prototipos, como PHOENIX y SENTINEL, promoviendo la investigación aplicada y el desarrollo tecnológico.</li>
+                                    <li>Lidera el programa interno de innovación, fomentando propuestas disruptivas y el uso responsable de tecnologías emergentes.</li>
+                                    <li>Supervisa la protección de la propiedad intelectual de la empresa, incluyendo patentes, marcas, derechos de autor y registros legales.</li>
+                                    <li>Evalúa integraciones con inteligencia artificial y tecnologías emergentes que aporten valor a la operación o a los productos.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Legalidad y cumplimiento:</h4>
+                                <ul>
+                                    <li>Garantiza la legalidad operativa y documental de la empresa.</li>
+                                    <li>Resguarda los contratos y convenios con colaboradores, aliados o socios.</li>
+                                    <li>Asegura el cumplimiento de políticas de privacidad, licencias, seguridad informática y uso de software open source.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Relaciones y marca (en colaboración con el área de Marketing y Relaciones Públicas):</h4>
+                                <ul>
+                                    <li>Representa a ARXBITE ante universidades, medios, aliados e instituciones.</li>
+                                    <li>Supervisa las comunicaciones externas, incluyendo sitio web, redes sociales, medios de prensa y materiales institucionales.</li>
+                                    <li>Coordina la presencia de la empresa en eventos, ferias, congresos y conferencias.</li>
+                                    <li>Desarrolla alianzas estratégicas y oportunidades de crecimiento internacional que fortalezcan la reputación y posicionamiento de la marca.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Riesgos y continuidad:</h4>
+                                <ul>
+                                    <li>Evalúa de forma periódica los riesgos operativos, legales y técnicos.</li>
+                                    <li>Mantiene actualizados los planes de contingencia, respaldos de información e infraestructura tecnológica.</li>
+                                    <li>Supervisa la seguridad de los datos, la privacidad y la confidencialidad en todos los niveles de la organización.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Cultura organizacional:</h4>
+                                <ul>
+                                    <li>Promueve y refuerza la cultura ARXBITE, basada en la innovación, honestidad, sostenibilidad, seguridad y responsabilidad social.</li>
+                                    <li>Organiza actividades de integración, reconocimiento y bienestar para el equipo.</li>
+                                    <li>Establece el calendario laboral anual y supervisa su cumplimiento.</li>
+                                    <li>Fomenta un entorno colaborativo, transparente y orientado al impacto positivo dentro y fuera de la empresa.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="p-6 bg-white rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Coordinador(a) de Área</h3>
+                        <p class="text-sm text-gray-500 mb-4 italic">(Sujeto a cambios)</p>
+                        
+                        <div class="space-y-4 prose-ul">
+                            <div>
+                                <h4 class="font-semibold">Función principal:</h4>
+                                <p>Actúa como el puente entre la estrategia y la ejecución. Traduce los objetivos del CEO en tareas específicas y accionables, asegurando su correcta implementación y cumplimiento dentro del equipo.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Gestión de proyectos y tareas:</h4>
+                                <ul>
+                                    <li>Asigna las tareas al equipo mediante la herramienta de gestión designada (Asana, Jira, Trello, etc.).</li>
+                                    <li>Supervisa avances, verifica entregables y asegura el cumplimiento de plazos establecidos.</li>
+                                    <li>Aplica metodologías adecuadas según el tipo de trabajo (por ejemplo: requisitos funcionales y no funcionales en desarrollo de software; moodboards y referencias visuales en concept art).</li>
+                                    <li>Establece plazos razonables, asignando tiempos con margen de contingencia (ejemplo: si una tarea requiere 4 horas, se asignan 5 tomando en cuenta el horario sugerido de los colaboradores).</li>
+                                    <li>Define entregables claros y medibles para cada tarea.</li>
+                                    <li>Mantiene Asana actualizada con el progreso y comentarios relevantes.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Comunicación y supervisión:</h4>
+                                <ul>
+                                    <li>Sirve como el principal punto de contacto entre el CEO y los colaboradores, facilitando el flujo de información y resolviendo bloqueos.</li>
+                                    <li>Reporta al CEO cuando alguna implementación, mejora o ajuste en el proyecto haya sido propuesta por un colaborador, para reconocer la iniciativa o evaluar su impacto.</li>
+                                    <li>En caso de que la propuesta implique cambios significativos o estructurales, deberá comunicarlo primero al CEO y solicitar su autorización previa antes de aplicarla en el proyecto.</li>
+                                    <li>Acompaña a nuevos practicantes o colaboradores, compartiendo buenas prácticas, promoviendo la resolución independiente de problemas y reforzando el cumplimiento de NDA y políticas de ciberseguridad.</li>
+                                    <li>Analiza el rendimiento y productividad del equipo, generando reportes al CEO.</li>
+                                    <li>Brinda retroalimentación constructiva sobre los trabajos realizados.</li>
+                                    <li>Verifica que el código o documentación técnica esté correctamente estructurado y comentado.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Gestión de calidad y mejora continua:</h4>
+                                 <ul>
+                                    <li>Propone mejoras en herramientas, plantillas o automatizaciones para optimizar el flujo de trabajo y reducir tareas manuales.</li>
+                                    <li>Supervisa el cumplimiento de los criterios de seguridad, privacidad, accesibilidad, inclusión, sostenibilidad y responsabilidad social en los entregables.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Gestión de desempeño y recursos:</h4>
+                                <ul>
+                                    <li>Controla y optimiza el uso de recursos (licencias, hardware, servicios, tareas).</li>
+                                    <li>Justifica necesidades y solicitudes adicionales del área.</li>
+                                    <li>Supervisa el estado de suscripciones, herramientas o servicios del área, notificando al CEO para su pago o renovación (En caso de que aplique)</li>
+                                    <li>Elabora y mantiene un tablero de KPIs Semanal que incluya:</li>
+                                </ul>
+                            </div>
+    
+                            <!-- KPIs Table -->
+                            <div class="overflow-x-auto mt-6">
+                                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                                    <thead class="bg-gray-100">
+                                        <tr>
+                                            <th class="py-2 px-4 border-b text-left">Indicador</th>
+                                            <th class="py-2 px-4 border-b text-left">Descripción</th>
+                                            <th class="py-2 px-4 border-b text-left">Ejemplo de Datos</th>
+                                            <th class="py-2 px-4 border-b text-left">Observaciones / Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-sm">
+                                        <tr>
+                                            <td class="py-2 px-4 border-b font-medium">Tareas no completadas</td>
+                                            <td class="py-2 px-4 border-b">Número de tareas originales planificadas que no se lograron finalizar dentro de la semana.</td>
+                                            <td class="py-2 px-4 border-b">- Tareas no completadas: 2<br>- Total tareas originales: 10</td>
+                                            <td class="py-2 px-4 border-b">Escribir la causa por la que no se completaron (por tareas emergentes, falta de tiempo, o devolución de trabajos).</td>
+                                        </tr>
+                                        <tr class="bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">Cumplimiento de plazos</td>
+                                            <td class="py-2 px-4 border-b">Tareas que requirieron ser reagendadas por falta de tiempo o mala planificación.</td>
+                                            <td class="py-2 px-4 border-b">- A tiempo: 8<br>- Reagendadas: 2<br>- Total tareas originales: 10</td>
+                                            <td class="py-2 px-4 border-b">Especificar si fue por falta de tiempo del colaborador o porque la tarea estaba mal planificada (dudas o complejidad no prevista).</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 px-4 border-b font-medium">Reagendadas por errores o calidad</td>
+                                            <td class="py-2 px-4 border-b">Tareas originales devueltas por el Coordinador por no cumplir estándares o el objetivo definido.</td>
+                                            <td class="py-2 px-4 border-b">- Devueltas y reagendadas: 1<br>- Total tareas originales: 10</td>
+                                            <td class="py-2 px-4 border-b">Detallar la razón de la devolución y los cambios requeridos. Si se devuelve una tercera vez por los mismos errores, la corrección no contará como horas de práctica (o lo que corresponda), pero deberá completarse antes de continuar con nuevas tareas.</td>
+                                        </tr>
+                                        <tr class="bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">Tareas emergentes</td>
+                                            <td class="py-2 px-4 border-b">Tareas nuevas agregadas durante la semana por necesidad del proyecto (no derivadas de errores).</td>
+                                            <td class="py-2 px-4 border-b">- Emergentes: 3<br>- Total tareas originales: 10<br>- Total tareas final: 13<br>- Tareas impactadas y no completadas: 2</td>
+                                            <td class="py-2 px-4 border-b">Detallar cada tarea emergente y cuántas tareas originales fueron afectadas o retrasadas por su incorporación.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 px-4 border-b font-medium">Tareas devueltas por el CEO</td>
+                                            <td class="py-2 px-4 border-b">Tareas originales que debieron rehacerse por no cumplir los objetivos del proyecto (no por detalles nuevos).</td>
+                                            <td class="py-2 px-4 border-b">- Devueltas por CEO: 2<br>- Total tareas originales: 10</td>
+                                            <td class="py-2 px-4 border-b">Indicar cuántas de las tareas de esta semana corresponden a retrabajos devueltos por el CEO y por qué (por ejemplo, que no se refleje correctamente la intención o propósito del proyecto).</td>
+                                        </tr>
+                                         <tr class="bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">Presupuesto semanal</td>
+                                            <td class="py-2 px-4 border-b">Recursos financieros requeridos para el avance del proyecto (software, licencias, materiales, etc.).</td>
+                                            <td class="py-2 px-4 border-b">- Monto total: $2,000 MXN</td>
+                                            <td class="py-2 px-4 border-b">Registrar gastos aprobados, pendientes o futuros y anotar si hay desvíos respecto al presupuesto estimado.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 px-4 border-b font-medium">Recaudación y ventas (si aplica)</td>
+                                            <td class="py-2 px-4 border-b">Ingresos generados por el proyecto (suscripciones, compras, donaciones, etc.).</td>
+                                            <td class="py-2 px-4 border-b">- Ingresos: $5,000 MXN<br>- Unidades vendidas: 120 (apps, ítems, etc.)</td>
+                                            <td class="py-2 px-4 border-b">Solo aplica para proyectos publicados. Incluir desglose si hay diferentes fuentes de ingreso.</td>
+                                        </tr>
+                                        <tr class="bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">Movimientos de personal</td>
+                                            <td class="py-2 px-4 border-b">Registro de ingresos o salidas de colaboradores durante la semana.</td>
+                                            <td class="py-2 px-4 border-b">- Nuevo: Ana Pérez – Concept Artist – Ingreso: 06/10/2025<br>- Salida: Ninguna</td>
+                                            <td class="py-2 px-4 border-b">Especificar la fecha y razón de ingreso o salida. Si aplica, indicar quién cubrirá el rol temporalmente.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 px-4 font-medium">Suscripciones activas del proyecto</td>
+                                            <td class="py-2 px-4">Servicios en uso vinculados al proyecto (nube, API, hosting, software, etc.) y su estado actual.</td>
+                                            <td class="py-2 px-4">- OpenAI API – vence 15/oct<br>- AWS Hosting – vence 30/oct<br>- MongoDB Atlas – vence 10/nov</td>
+                                            <td class="py-2 px-4">Mantener actualizado el estado de cada suscripción. Indicar si requiere renovación o si está pendiente de pago.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-lg shadow-sm mt-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">👩‍💻 Colaborador(a)</h3>
+                        <div class="space-y-4 prose-ul">
+                            <div>
+                                <h4 class="font-semibold">Función operativa:</h4>
+                                <p>Ejecuta las tareas asignadas dentro de los plazos establecidos, aplicando sus conocimientos técnicos, creatividad y criterio profesional. Se espera que mantenga la calidad, precisión y cumplimiento de los objetivos definidos por el Coordinador o el CEO.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Autonomía y flexibilidad:</h4>
+                                <p>Organiza libremente su tiempo y método de trabajo para alcanzar los resultados esperados. La evaluación se basa en la calidad y cumplimiento de los entregables, no en las horas de conexión. Puede distribuir su horario según conveniencia, siempre garantizando la entrega en tiempo y forma.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Comunicación estructurada:</h4>
+                                <p>Dispone de un horario sugerido para interactuar en tiempo real con su Coordinador (reuniones, revisiones, aclaraciones inmediatas).</p>
+                                <p>Fuera de ese horario, la comunicación será asincrónica, dejando comentarios, preguntas o actualizaciones que se revisarán en el siguiente horario sugerido de trabajo o cuando el Coordinador se encuentre disponible.</p>
+                                <p>Si existe algún conflicto, malentendido o problema directo con el Coordinador, el colaborador deberá reportarlo inmediatamente al CEO, quien evaluará y dará seguimiento al caso de manera imparcial y confidencial.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Responsabilidad profesional:</h4>
+                                <p>Mantiene orden en sus archivos, versiones y documentación. Reporta avances, incidencias o bloqueos de forma oportuna y busca resolver problemas de manera individual antes de escalar la duda o problema a su coordinador.</p>
+                                <p>Además, debe procurar que cada entrega esté completa, revisada y funcional, evitando errores por descuido o falta de verificación.</p>
+                                <ul>
+                                    <li>Si una tarea es devuelta tres veces o más por los mismos errores o faltas de calidad, la corrección no contará como horas de práctica (o lo que corresponda), aunque deberá finalizarse obligatoriamente antes de continuar con nuevas tareas asignadas.</li>
+                                </ul>
+                                <p>En cada devolución, el colaborador deberá detallar la causa del problema y las acciones correctivas aplicadas, fomentando el aprendizaje y la mejora continua.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Colaboración e iniciativas:</h4>
+                                <p>Puede proponer mejoras, optimizaciones o nuevas ideas relacionadas con el proyecto.</p>
+                                <ul>
+                                    <li>Si la propuesta implica cambios menores o de mejora puntual, puede comunicarla directamente a su Coordinador antes de realizarla.</li>
+                                    <li>Si el cambio es significativo o estructural, deberá informar previamente al Coordinador el cual solicitara autorización al CEO antes de aplicarlo.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Uso de herramientas de trabajo y reuniones semanales:</h4>
+                                <p>El colaborador deberá utilizar su propio hardware y software para el desarrollo de sus actividades, salvo que el Coordinador indique lo contrario o autorice el uso de equipos o licencias proporcionadas por la empresa.</p>
+                                <p>Además, una vez por semana habrá un día adicional al(los) día(s) de descanso habitual(es) en el que no se realizarán labores, pero el colaborador deberá asistir a una reunión virtual con su Coordinador a las 9:00 P.M. (GMT-6).</p>
+                                <p>Esta reunión tiene como finalidad planificar los objetivos de la siguiente semana y resolver dudas.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Confidencialidad y NDA:</h4>
+                                <p>Todo colaborador está sujeto a un acuerdo de confidencialidad (NDA) firmado con la empresa.</p>
+                                <p>Se compromete a no divulgar ni permitir que nadie tenga acceso a información técnica, visual, estratégica de los proyectos, procesos internos, documentación, diseños, código fuente, o algún otro tipo de información que el colaborador posea.</p>
+                                <p>En caso de requerir apoyo o asesoría de una persona externa durante la ejecución de una tarea, el colaborador deberá asegurarse de que dicha persona no reciba ni acceda a información del proyecto.</p>
+                                <p>Esto incluye situaciones relacionadas con prácticas profesionales o reportes escolares: en esos casos, el colaborador deberá describir su trabajo de forma general y técnica, sin revelar detalles específicos, información sensible o el propósito interno del proyecto. El material desarrollado dentro del proyecto pertenece a la empresa, conforme a los términos establecidos en el contrato o convenio de colaboración.</p>
+                                <p>Cualquier uso de material para portafolio personal deberá contar con autorización previa por escrito del CEO, una vez que el proyecto sea público.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Mejora continua:</h4>
+                                <p>Participa en revisiones grupales, comparte aprendizajes, y mantiene disposición para capacitación o actualización en herramientas, procesos o estándares de la empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- Flujo de Trabajo Semanal -->
+                <section id="flujo-trabajo" class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2">🗓️ Flujo de Trabajo Semanal</h2>
+                    <div class="p-6 bg-white rounded-lg shadow-sm space-y-4">
+                        <p>El trabajo se organiza en sprints semanales, con un ritmo definido para cada fase del proceso.</p>
+                        <p>Cada proyecto tiene un día específico de inicio y finalización de sprint, y durante el ciclo se contempla un día de descanso, por lo que la planificación está basada en seis días laborales.</p>
+                        
+                        <div class="prose-ul">
+                            <h4 class="font-semibold mt-4">Día 1: Planificación Táctica y Asignación de Tareas</h4>
+                            <p>Durante este día, los colaboradores no laboran pero si cuentan con una junta al finalizar el día, durante el día el coordinador asigna todas las tareas en la herramienta de gestión correspondiente “ASANA”, siguiendo estas directrices:</p>
+                            <ul>
+                                <li><b>Plazos razonables:</b> Asignar tiempos con margen suficiente (por ejemplo, si una tarea requiere 4 horas, se asignan 5).</li>
+                                <li><b>Duración flexible:</b> Las tareas pueden tener una duración variable, desde unas horas hasta varios días siempre siendo la entrega de la tarea dentro del horario sugerido del colaborador.</li>
+                            </ul>
+                            <p>A las 9:00 P.M. (GMT-6) el coordinador de área realiza una reunión con sus colaboradores para comunicar los objetivos de la semana, las tareas asignadas, los entregables esperados y resolver cualquier duda sobre el sprint y sus tareas.</p>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-r-lg mt-2">
+                               <b>Nota:</b> Para los colaboradores este día se cuenta como si hubiera laborado o cumplido las horas de prácticas correspondientes al horario sugerido aunque no se haya laborado ese día, siempre y cuando éste asista a la junta al final del día.
+                            </div>
+    
+                            <h4 class="font-semibold mt-4">Días 2 a 5: Periodo de Ejecución</h4>
+                            <p>Durante esta etapa se espera que los colaboradores trabajen con responsabilidad y autonomía, buscando soluciones antes de escalar dudas, fomentando su aprendizaje autodidacta. El coordinador supervisa el progreso, brinda apoyo técnico y atiende dudas, respetando siempre el horario sugerido para comunicación síncrona, solicitudes de cambios inmediatos y Asignacion de tareas emergentes, fuera de este horario la comunicacion y asignacion de tareas emergentes o resolucion de dudas esta sujeta a la disponibilidad del colaborador o coordinador o hasta el siguiente horario sugerido.</p>
+                            <ul>
+                                <li>Toda comunicación deberá realizarse dentro del horario laboral establecido por la empresa.</li>
+                                <li>Los mensajes o comentarios realizados fuera de este horario se considerarán notas para revisión en la siguiente jornada laboral.</li>
+                            </ul>
+    
+                            <h4 class="font-semibold mt-4">Día 6: Entrega Final</h4>
+                            <ul>
+                                <li>El ciclo concluye oficialmente con la entrega de todos los trabajos pendientes antes de que finalice el horario laboral de la empresa.</li>
+                                <li>El coordinador consolida los resultados, prepara un reporte semanal y lo presenta al CEO en una reunión a las 9:00 P.M. (GMT-6), marcando el inicio del siguiente ciclo de planificación.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Instrucciones Generales -->
+                <section id="instrucciones-comunicacion" class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2">📋 Instrucciones Generales de Comunicación y Gestión de Tareas</h2>
+                    <div class="p-6 bg-white rounded-lg shadow-sm space-y-4 prose-ul">
+                        <p>Con el fin de mantener una organización eficiente, respetar los horarios personales y asegurar un flujo de trabajo ordenado, se establecen las siguientes normas aplicables a colaboradores, coordinadores y dirección general (CEO).</p>
+                        
+                        <div>
+                            <h4 class="font-semibold text-xl">🧑‍💻 Para Colaboradores</h4>
+                            <div class="mt-2 pl-4">
+                                <h5 class="font-semibold">Comunicación laboral:</h5>
+                                <ul>
+                                    <li>Toda comunicación relacionada con el trabajo (mensajes, llamadas, solicitudes o correcciones) deberá realizarse únicamente dentro del horario laboral de la empresa.</li>
+                                    <li>Fuera de dicho horario, los mensajes se considerarán notas para revisión en la siguiente jornada laboral.</li>
+                                </ul>
+                                <h5 class="font-semibold mt-2">Contacto fuera de horario:</h5>
+                                <ul>
+                                    <li>Se deberá evitar contactar a coordinadores o al CEO fuera del horario de la empresa, a menos que se trate de una situación urgente o crítica que requiera atención inmediata.</li>
+                                </ul>
+                                <h5 class="font-semibold mt-2">Cumplimiento de tareas:</h5>
+                                <ul>
+                                    <li>El tiempo de trabajo se considerará conforme al horario sugerido, sin importar si la persona decide laborar antes o después por decisión propia.</li>
+                                </ul>
+                                <h5 class="font-semibold mt-2">Tareas emergentes:</h5>
+                                <ul>
+                                    <li>Si una tarea emergente se asigna durante su horario sugerido, el colaborador deberá atenderla de forma prioritaria y, una vez completada, retomar la tarea anterior en la que se encontraba trabajando, (se moverá la fecha de entrega de la tarea anterior y las que sigan para no afectar la tarea que se estaba realizando).</li>
+                                    <li>Si la tarea emergente se asigna fuera de su horario sugerido, el colaborador deberá atenderla cuando le sea posible o durante su siguiente horario sugerido, según la forma en que haya organizado sus tiempos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <h4 class="font-semibold text-xl">🧭 Para Coordinadores</h4>
+                            <div class="mt-2 pl-4">
+                                <h5 class="font-semibold">Comunicación y liderazgo:</h5>
+                                <ul>
+                                    <li>Las interacciones con colaboradores y el CEO deberán realizarse únicamente dentro del horario de la empresa establecido.</li>
+                                    <li>Fuera de ese horario, solo se permitirá comunicación por motivos estrictamente urgentes o técnicos que no puedan posponerse.</li>
+                                </ul>
+                                <h5 class="font-semibold mt-2">Gestión de tareas y entregas:</h5>
+                                <ul>
+                                    <li>Las tareas deberán ser planificadas y asignadas considerando los horarios sugeridos de cada colaborador.</li>
+                                    <li>No se solicitarán entregas fuera del horario sugerido de quien tenga la tarea asignada.</li>
+                                </ul>
+                                <h5 class="font-semibold mt-2">Tareas emergentes:</h5>
+                                <ul>
+                                    <li>En caso de surgir una situación urgente fuera del horario laboral y el colaborador asignado no esté disponible, el coordinador deberá intentar resolver el problema directamente o contener la situación temporalmente hasta que el colaborador pueda atenderla. Posteriormente, deberá informar al CEO sobre la incidencia y la medida adoptada.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- Guía de Resolución -->
+                <section id="guia-resolucion" class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2">🧩 Guía para Resolución de Errores y Dudas Técnicas</h2>
+                    <div class="p-6 bg-white rounded-lg shadow-sm space-y-6">
+                        <p>Esta guía establece el orden recomendado para resolver errores o dudas durante el desarrollo de actividades dentro de los proyectos de ARXBITE. Su objetivo es fomentar la autonomía, la responsabilidad y la eficiencia, garantizando la confidencialidad de la información y el cumplimiento de los plazos establecidos.</p>
+                        
+                        <div class="space-y-4">
+                            <h4 class="text-lg font-semibold">⚙️ 1. Preguntarse: ¿Puedo resolverlo por mi cuenta?</h4>
+                            <p>Antes de solicitar apoyo, el colaborador debe analizar el problema y evaluar si cuenta con los conocimientos, herramientas y tiempo para resolverlo de manera autónoma.</p>
+                            <p>Si la respuesta es afirmativa:</p>
+                            <ul class="list-disc pl-6">
+                                <li>Intente resolverlo aplicando su criterio, documentación previa o materiales de referencia internos.</li>
+                                <li>Registre brevemente las acciones que realizó y el resultado obtenido, para futuras referencias o reportes.</li>
+                            </ul>
+                            <p class="italic text-gray-600">💡 El desarrollo de la autonomía es parte esencial de las prácticas profesionales y la formación dentro de ARXBITE.</p>
+    
+                            <h4 class="text-lg font-semibold">🌐 2. Buscar soluciones en línea</h4>
+                            <p>Si el problema persiste, se debe realizar una investigación independiente en fuentes confiables (documentación oficial, foros técnicos, comunidades profesionales o guías académicas).</p>
+                            <ul class="list-disc pl-6">
+                                <li>Evite utilizar soluciones copiadas sin comprender su funcionamiento.</li>
+                                <li class="italic text-gray-600">🧠 El objetivo es aprender y aplicar el conocimiento, no solo replicar código o procesos.</li>
+                            </ul>
+    
+                            <h4 class="text-lg font-semibold">🧑‍🏫 3. Consultar a una persona externa (sin revelar información del proyecto)</h4>
+                            <p>En caso de no encontrar una solución, se puede recurrir a alguien externo (profesor, mentor o colega) solo para resolver la duda técnica general, nunca sobre detalles del proyecto.</p>
+                            <p>Debe cumplirse lo siguiente:</p>
+                            <ul class="list-disc pl-6">
+                               <li>No mencionar el nombre del proyecto, sus objetivos, contenido ni estructura.</li>
+                               <li>Describir el problema de manera general (ejemplo: “tengo un error al conectar una base de datos en Node.js”).</li>
+                               <li>En caso de prácticas profesionales, al redactar reportes o avances escolares, omitir información confidencial del proyecto, limitándose a explicar la experiencia o aprendizaje técnico.</li>
+                            </ul>
+                            <p class="font-bold text-red-600">🔒 Recordar que todo colaborador o practicante ha firmado un Acuerdo de Confidencialidad (NDA). Cualquier incumplimiento será considerado falta grave.</p>
+    
+                            <h4 class="text-lg font-semibold">🧭 4. Escalar al Coordinador de Área</h4>
+                            <p>Si el problema continúa sin resolverse, se deberá comunicar al coordinador correspondiente dentro del horario sugerido del colaborador.</p>
+                            <p>El mensaje debe incluir:</p>
+                            <ul class="list-disc pl-6">
+                                <li>Descripción breve del problema.</li>
+                                <li>Acciones previas e intentos de solución.</li>
+                                <li>Evidencias o capturas, si son necesarias.</li>
+                                <li>Tiempo aproximado que lleva detenido.</li>
+                            </ul>
+                            <p>El coordinador revisará el caso y ofrecerá respuesta o solución tan pronto sea posible.</p>
+                            <ul class="list-disc pl-6">
+                                <li class="italic text-gray-600">⏰ Si es dentro del horario sugerido, se buscará responder de forma inmediata.</li>
+                                <li>Si no es posible hacerlo en ese momento, el caso pasará a evaluación y se aplicará el apartado de “aplazamiento de tareas”.</li>
+                                <li>Fuera del horario sugerido, la respuesta quedará sujeta a la disponibilidad del coordinador o al siguiente horario sugerido del colaborador.</li>
+                            </ul>
+    
+                            <h4 class="text-lg font-semibold">📅 5. Manejo del tiempo y aplazamiento de tareas</h4>
+                            <p>Si la duda o error es esencial para continuar con el desarrollo del proyecto (por ejemplo, una decisión técnica o de diseño validada por el coordinador o CEO) y no se recibe respuesta en el momento, la fecha de entrega de la tarea se ajustará de la siguiente manera:</p>
+                            <ul class="list-disc pl-6">
+                                <li>Se contabilizarán las horas sugeridas en las que el colaborador no pudo avanzar por falta de respuesta.</li>
+                                <li>Dichas horas se sumarán como horas extras justificadas, y se reprogramará la entrega sin afectar su registro de cumplimiento.</li>
+                            </ul>
+                            <p>El coordinador deberá procurar responder lo antes posible para evitar retrasos acumulados o sobrecarga de trabajo.</p>
+                            <p class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-md text-sm">📘 <b>Ejemplo:</b> Si un practicante tiene horario sugerido de 12 a 4 p.m. y su duda esencial surge a las 2 p.m. no se responde hasta las 6 p.m., se suman 2 horas laboradas o de practicas y se aplazaran las tareas 2 horas para continuar con el flujo correcto.</p>
+    
+                            <h4 class="text-lg font-semibold">⚖️ 6. Preguntas generales o no esenciales</h4>
+                            <p>Si las dudas corresponden a temas de conocimiento general (por ejemplo, cómo usar una herramienta, conceptos teóricos o pasos que ya fueron explicados previamente) o si el coordinador ya había proporcionado la información necesaria, no se ajustarán fechas ni contarán horas adicionales de trabajo o prácticas, salvo que el CEO o coordinador indique lo contrario.</p>
+                            <p class="bg-gray-100 p-3 rounded-md text-sm">🧾 <b>En caso de discrepancia</b> entre colaborador y coordinador sobre si la información fue entregada, ambas partes deberán contar con evidencia documental o capturas que respalden su versión. Si ninguna parte puede comprobarlo, el CEO evaluará el caso y tomará la decisión correspondiente. Cada situación será analizada individualmente, pero por norma general no se modificarán los plazos ni las horas registradas en preguntas no esenciales.</p>
+    
+                            <h4 class="text-lg font-semibold">📘 7. Recomendaciones generales</h4>
+                            <ul class="list-disc pl-6">
+                                <li>Documentar los errores y sus soluciones en la herramienta de gestión o bitácora del proyecto.</li>
+                                <li>Mantener comunicación respetuosa y clara con el equipo.</li>
+                                <li>Evitar mensajes redundantes o fuera del horario laboral salvo casos urgentes.</li>
+                                <li>Priorizar siempre la comprensión del problema antes de escalarlo.</li>
+                                <li>Fomentar la mejora continua y el aprendizaje independiente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-200">
+            <p class="text-sm text-gray-500">&copy; 2025 ARXBITE S.A.S de C.V. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
