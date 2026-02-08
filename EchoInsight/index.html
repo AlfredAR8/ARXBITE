@@ -4,192 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echo Insight - AI Music Analytics</title>
+    <meta name="description" content="Echo Insight analyzes your Spotify listening history using AI to provide deep insights and generate custom playlists.">
     <style>
         :root {
-            --primary-bg: #0f172a;
-            --secondary-bg: #1e293b;
-            --accent-color: #3b82f6;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
+            --bg-color: #050505;
+            --text-color: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #8b5cf6;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--primary-bg);
-            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
         }
 
-        /* Navigation */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navbar */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
-            background-color: rgba(15, 23, 42, 0.9);
-            position: sticky;
-            top: 0;
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #334155;
+            padding: 24px 0;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--text-main);
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: white;
             text-decoration: none;
         }
 
         .nav-links a {
-            color: var(--text-muted);
+            color: var(--text-secondary);
             text-decoration: none;
             margin-left: 20px;
-            transition: color 0.2s;
+            font-size: 0.9rem;
         }
+        
+        .nav-links a:hover { color: white; }
 
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Hero Section */
+        /* Hero */
         .hero {
             text-align: center;
-            padding: 100px 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 80px 0;
         }
 
-        .hero h1 {
+        h1 {
             font-size: 3rem;
             margin-bottom: 20px;
-            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            background: linear-gradient(to right, #fff, #a1a1aa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero p {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            margin-bottom: 40px;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 40px;
         }
 
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
+        .download-btn {
+            background: white;
+            color: black;
+            padding: 12px 28px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.2s, background-color 0.2s;
+            font-weight: 600;
+            display: inline-block;
         }
 
-        .cta-button:hover {
-            transform: translateY(-2px);
-            background-color: #2563eb;
+        /* Sections */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 80px;
+            margin-bottom: 40px;
         }
 
         /* Features Grid */
         .features {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 30px;
+            border-radius: 16px;
+        }
+
+        .card h3 { margin-top: 0; color: var(--accent-primary); }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Transparency Section (CRITICAL FOR VERIFICATION) */
+        .transparency-section {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 80px;
+        }
+
+        .transparency-grid {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            padding: 60px 40px;
-            max-width: 1200px;
-            margin: 0 auto;
+            margin-top: 20px;
         }
 
-        .feature-card {
-            background-color: var(--secondary-bg);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #334155;
-        }
+        .data-point strong { display: block; color: white; margin-bottom: 5px; }
+        .data-point span { color: var(--text-secondary); font-size: 0.9rem; }
 
-        .feature-card h3 {
-            margin-top: 0;
-            color: var(--accent-color);
-        }
-
-        /* Footer - THIS IS THE CRITICAL PART FOR VERIFICATION */
+        /* Footer */
         footer {
-            background-color: var(--secondary-bg);
-            padding: 40px;
+            margin-top: 100px;
+            padding: 40px 0;
+            border-top: 1px solid var(--glass-border);
             text-align: center;
-            margin-top: 60px;
-            border-top: 1px solid #334155;
         }
 
-        .footer-links {
-            margin-bottom: 20px;
-        }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: var(--text-secondary); margin: 0 15px; text-decoration: none; }
+        .footer-links a:hover { text-decoration: underline; color: white; }
+        .copyright { color: #555; font-size: 0.8rem; }
 
-        .footer-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 0.9rem;
-        }
-
-        .footer-links a:hover {
-            color: var(--text-main);
-            text-decoration: underline;
-        }
-
-        .copyright {
-            color: #64748b;
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 2rem; }
-            nav { flex-direction: column; gap: 15px; }
-            .nav-links { margin-top: 10px; }
-        }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="#" class="logo">Echo Insight</a>
-        <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="mailto:support@arxbite.com">Contact</a>
-        </div>
-    </nav>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">Echo Insight</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#privacy">Privacy</a>
+            </div>
+        </nav>
 
-    <div class="hero">
-        <h1>Unlock Your Music DNA</h1>
-        <p>Get personalized music recommendations and deep insights into your listening habits powered by Spotify API and OpenAI.</p>
-        <a href="#" class="cta-button">Download App</a>
+        <section class="hero">
+            <h1>Understand Your Music</h1>
+            <p>Connect with Spotify to analyze your listening habits, generate AI-powered descriptions of your taste, and create custom playlists.</p>
+            <a href="https://apps.apple.com/mx/app/echo-insight/id6657958000" class="download-btn">Download on App Store</a>
+        </section>
+
+        <h2 class="section-title" id="features">App Functionality</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Spotify Analysis</h3>
+                <p>We connect to your Spotify account to read your top tracks and artists. This allows us to visualize your listening trends over time.</p>
+            </div>
+            <div class="card">
+                <h3>AI Insights</h3>
+                <p>Using OpenAI (ChatGPT), we generate unique, personalized descriptions of your music persona based on your actual history.</p>
+            </div>
+            <div class="card">
+                <h3>Playlist Creation</h3>
+                <p>Discover new music and save it directly to your library. We require permission to create public or private playlists on your behalf.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="privacy">Data Usage & Transparency</h2>
+        <div class="transparency-section">
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px; color: #cbd5e1;">
+                We value your privacy. Echo Insight requests specific permissions solely to provide the core functionality of the app. We do not sell your data.
+            </p>
+            <div class="transparency-grid">
+                <div class="data-point">
+                    <strong>Read User Top Items</strong>
+                    <span>Used to analyze your most listened-to tracks and artists to generate your music profile.</span>
+                </div>
+                <div class="data-point">
+                    <strong>Playlist Modify (Public/Private)</strong>
+                    <span>Required only so the app can create new playlists in your account when you ask it to.</span>
+                </div>
+                <div class="data-point">
+                    <strong>User Read Email</strong>
+                    <span>Used solely for unique user identification within our secure database.</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://www.arxbite.com/EchoInsight/PrivacyPolicy">Privacy Policy</a>
+                <a href="https://www.arxbite.com/EchoInsight/TermsAndConditions">Terms & Conditions</a>
+                <a href="mailto:support@arxbite.com">Support</a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Arxbite. All rights reserved.
+            </div>
+        </footer>
     </div>
-
-    <div class="features" id="features">
-        <div class="feature-card">
-            <h3>AI Analysis</h3>
-            <p>Utilizing ChatGPT to analyze your preferences and generate unique descriptions of your music taste.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Spotify Integration</h3>
-            <p>Seamlessly connect with your Spotify account to analyze history and create new playlists.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Data Privacy</h3>
-            <p>Your data is yours. You can disconnect your account and wipe your data at any time.</p>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-links">
-            <a href="https://www.arxbite.com/EchoInsight/PrivacyPolicy">Privacy Policy</a>
-            <a href="https://www.arxbite.com/EchoInsight/TermsAndConditions">Terms & Conditions</a>
-        </div>
-        <div class="copyright">
-            &copy; 2024 Arxbite. All rights reserved.
-        </div>
-    </footer>
 
 </body>
 </html>
