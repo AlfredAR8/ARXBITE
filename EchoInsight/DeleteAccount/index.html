@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Eliminación de Cuenta | Echo Insight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f9fafb;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900">
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <!-- Tarjeta Principal -->
+        <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden">
+            
+            <!-- Encabezado -->
+            <div class="gradient-bg p-8 text-white text-center">
+                <h1 class="text-3xl font-bold mb-2">Echo Insight</h1>
+                <p class="text-slate-300">Privacidad de Datos y Solicitud de Eliminación de Cuenta</p>
+            </div>
+
+            <div class="p-8">
+                <!-- Proceso de Solicitud -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Proceso de Solicitud</h2>
+                    <p class="text-gray-600 mb-4">
+                        Si desea proceder con la eliminación de su cuenta en <strong>Echo Insight</strong> de <strong>ARXBITE</strong>, siga las instrucciones detalladas a continuación.
+                    </p>
+                    
+                    <div class="bg-slate-50 border-l-4 border-slate-800 p-4 rounded-r">
+                        <p class="font-medium text-slate-900">Instrucciones:</p>
+                        <ol class="list-decimal list-inside text-slate-700 mt-2 space-y-2 text-sm">
+                            <li>Redacte un correo desde la dirección electrónica vinculada a su cuenta.</li>
+                            <li>Envíe el mensaje a <span class="font-mono font-bold text-indigo-600">EchoInsight@arxbite.com</span></li>
+                            <li>Asunto sugerido: <span class="italic font-semibold">"Eliminar Cuenta - [Su Correo Electrónico]"</span></li>
+                            <li>Nuestro equipo procesará la solicitud en un periodo máximo de 7 días hábiles.</li>
+                        </ol>
+                    </div>
+
+                    <div class="mt-6 flex justify-center">
+                        <a href="mailto:EchoInsight@arxbite.com?subject=Solicitud de Eliminación de Cuenta" 
+                           class="bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-md">
+                            Enviar Correo de Eliminación
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Información de Datos -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Gestión de sus datos</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold text-red-600 mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                                Datos que eliminamos
+                            </h3>
+                            <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                                <li>Identidad personal y correo electrónico</li>
+                                <li>Vínculo con identificadores únicos (userUUID)</li>
+                                <li>Credenciales de inicio de sesión</li>
+                                <li>Saldo de monedas actual (coins)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-indigo-600 mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+                                Datos que conservamos
+                            </h3>
+                            <p class="text-xs text-gray-500 mb-2">Se conservan de forma anonimizada o por ley:</p>
+                            <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                                <li><strong>Contenido generado (Canciones)</strong></li>
+                                <li><strong>Estadísticas y Analíticas de uso</strong></li>
+                                <li>Registros de compras y facturación</li>
+                                <li>Logs de seguridad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Nota sobre Anonimización -->
+                <section>
+                    <h2 class="text-xl font-semibold mb-2 border-b pb-2">Política de Retención</h2>
+                    <p class="text-sm text-gray-600 italic">
+                        Al eliminar su cuenta, su identidad personal será borrada de nuestros sistemas. El contenido generado (canciones) y las estadísticas de uso (compras, errores, etc.) se conservarán en nuestros servidores de forma desvinculada a su identidad para fines analíticos y de integridad del servicio. Los registros de transacciones financieras se mantienen hasta por 7 años por cumplimiento legal.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Pie de página -->
+            <div class="bg-gray-50 p-6 text-center border-t border-gray-100">
+                <p class="text-xs text-gray-400 uppercase tracking-widest">
+                    &copy; 2024 ARXBITE • Echo Insight
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
