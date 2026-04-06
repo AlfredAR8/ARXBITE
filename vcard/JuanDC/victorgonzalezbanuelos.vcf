@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Gonzalez Bañuelos;Victor;;;
+FN:Victor Gonzalez Bañuelos
+ORG:ARXBITE
+TITLE:Marketing Area Manager
+TEL;TYPE=CELL,VOICE,pref:+524621008409
+TEL;TYPE=WORK,SMS:+524621008409
+EMAIL;TYPE=INTERNET,WORK:VictorGB@arxbite.com
+URL;TYPE=WORK:https://arxbite.com/
+URL;TYPE=LINKEDIN:https://www.linkedin.com/in/victor-gonzalez-banuelos/
+URL;TYPE=WHATSAPP:https://wa.me/+524621008409
+NOTE;CHARSET=UTF-8:Marketing Area Manager at ARXBITE. Public key available for encrypted messaging.
+REV:2026-04-05T21:35:00Z
+END:VCARD

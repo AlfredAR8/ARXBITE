@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Diosdado Cardenas;Juan Pablo;;;
+FN:Juan Pablo Diosdado Cardenas
+ORG:ARXBITE
+TITLE:Marketing Area Manager
+TEL;TYPE=CELL,VOICE,pref:+524773094339
+TEL;TYPE=WORK,SMS:+524773094339
+EMAIL;TYPE=INTERNET,WORK:JuanDC@arxbite.com
+URL;TYPE=WORK:https://www.arxbite.com/
+URL;TYPE=LINKEDIN:https://www.linkedin.com/in/juan-pablo-diosdado-cárdenas-924532253/
+URL;TYPE=WHATSAPP:https://wa.me/+524773094339
+NOTE;CHARSET=UTF-8:Marketing Area Manager at ARXBITE. Public key available for encrypted messaging.
+REV:2026-04-05T21:32:08Z
+END:VCARD
